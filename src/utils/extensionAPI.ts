@@ -5,7 +5,7 @@ interface ExtensionMessage {
 }
 
 // Verify extension origin
-const EXTENSION_ID = "YOUR_EXTENSION_ID";
+//const EXTENSION_ID = "YOUR_EXTENSION_ID";
 
 export const initExtensionAPI = () => {
   // Listen for messages from extension

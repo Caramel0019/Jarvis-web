@@ -43,7 +43,8 @@ const ConnectWallet: React.FC<ConnectWalletProps> = ({ isOPen, onAlert }) => {
       // Close modal after short delay
       setTimeout(() => window.close(), 1500);
     } catch (error) {
-      onAlert("error", error.message);
+      const message = error instanceof Error ? error.message : String(error);
+      onAlert("error", message);
       setConnecting(false);
     }
   };
